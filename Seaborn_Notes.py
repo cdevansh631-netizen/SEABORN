@@ -129,11 +129,21 @@ import seaborn as sns
 # 14- SWARM PLOT :-
 #In strip plot data can be overlap that"s why we use jitter.
 #And in SWARM PLOT PT DOESN'T OVERLAP.
-df=pd.read_csv("MARKSHEET.csv")
-sns.swarmplot(data=df,x="Ethnicity",y="Percentage")
-plt.show()
+# df=pd.read_csv("MARKSHEET.csv")
+# sns.swarmplot(data=df,x="Ethnicity",y="Percentage")
+# plt.show()
 
 
+
+# 15- KDE PLOT SEABORN :-
+# df=pd.read_csv("MARKSHEET.csv")
+# #multiple=stacK/fill -- [--USED TO CHANGE COLOR AND DESIGN OF PLOT--]
+# sns.kdeplot(data=df,x="Percentage",hue="Gender",multiple="stack")
+# plt.show()
+
+
+
+# 
 
 
 # print(df.head())
