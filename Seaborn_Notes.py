@@ -86,10 +86,10 @@ import seaborn as sns
 
 # 10- CAT PLOT SEABORN :-
 
-df=pd.read_csv("MARKSHEET.csv")
-##CAT PLOT : Stand for categorial plot.
-sns.catplot(data=df,x="Ethnicity",y="Percentage",hue="Gender",kind="bar")
-plt.show()
+# df=pd.read_csv("MARKSHEET.csv")
+# ##CAT PLOT : Stand for categorial plot.
+# sns.catplot(data=df,x="Ethnicity",y="Percentage",hue="Gender",kind="bar")
+# plt.show()
 
 
 
