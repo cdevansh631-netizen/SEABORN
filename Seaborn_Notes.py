@@ -23,7 +23,7 @@ import seaborn as sns
 # 2- BAR PLOT :--
 # df=pd.read_csv("MARKSHEET.csv")
 # #ORDER : By order we can change indexes on x .
-# sns.barplot(data=df,x="Roll_Number",y="Percentage",hue="Gender",order=[111,110,109,108,107,106,105,104,103,102,101],palette=["blue"],estimator="median")
+# sns.barplot(data=df,x="Roll_Number",y="Percentage",hue="Gender",order=[111,110,109,108,107,106,105,104,103,102,101],palette=["blue","pink"],estimator="median")
 # plt.show()
 
 
@@ -33,7 +33,6 @@ import seaborn as sns
 # df=pd.read_csv("MARKSHEET.csv")
 # sns.histplot(data=df,bins=3,x="Percentage",hue="Gender",kde=True)
 # plt.show()
-# print(df.head())
 
 
 
@@ -49,8 +48,7 @@ import seaborn as sns
 # df=pd.read_csv("MARKSHEET.csv")
 # # print(df.head())
 # gs=df.groupby("Ethnicity").agg({"Percentage":"mean"})
-# sns.heatmap(gs)
-# c
+# # sns.heatmap(gs)
 # sns.countplot(data=df,x="Gender")
 # plt.show()
 
