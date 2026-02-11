@@ -65,7 +65,7 @@ import seaborn as sns
 
 
 
-# 8-STRIP PLOT SEABORN :-
+# 8-STRIP PLOT SEABORN :-X-axis Categorical-DATA MAY OVERLAP-BEST FOR LARGE DATASET
 # df=pd.read_csv("MARKSHEET.csv")
 # ##dodge :- When hue is used then dodge is used and parameters in hue u provide do not coincide.
 # ##jitter :-jitter add small random movement to data point so they dont overlap.
@@ -86,10 +86,10 @@ import seaborn as sns
 
 # 10- CAT PLOT SEABORN :-
 
-# df=pd.read_csv("MARKSHEET.csv")
-# ##CAT PLOT : Stand for categorial plot.
-# sns.catplot(data=df,x="Ethnicity",y="Percentage",hue="Gender",kind="violin")
-# plt.show()
+df=pd.read_csv("MARKSHEET.csv")
+##CAT PLOT : Stand for categorial plot.
+sns.catplot(data=df,x="Ethnicity",y="Percentage",hue="Gender",kind="bar")
+plt.show()
 
 
 
@@ -124,9 +124,9 @@ import seaborn as sns
 # plt.show()
 
 
-# 14- SWARM PLOT :-
-#In strip plot data can be overlap that"s why we use jitter.
-#And in SWARM PLOT PT DOESN'T OVERLAP.
+# 14- SWARM PLOT :- NEVER COINCIDE BEST FOR SMALL DATA FOR EXACT LOCATION.
+# In strip plot data can be overlap that"s why we use jitter.
+# And in SWARM PLOT PT DOESN'T OVERLAP.
 # df=pd.read_csv("MARKSHEET.csv")
 # sns.swarmplot(data=df,x="Ethnicity",y="Percentage")
 # plt.show()
@@ -141,7 +141,8 @@ import seaborn as sns
 
 
 
-# 
-
-
-# print(df.head())
+# Distribution: hist, kde, box, violin
+# Count: countplot
+# Individual points: strip, swarm, scatter
+# Relationship: line, scatter, heatmap
+# Overview (EDA): pairplot, catplot, relplot
