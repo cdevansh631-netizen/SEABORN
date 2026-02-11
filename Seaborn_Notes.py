@@ -44,8 +44,8 @@ import seaborn as sns
 
 
 
-# 5- HEATMAP PLOT :-
-# df=pd.read_csv("MARKSHEET.csv")
+# 5- HEATMAP PLOT :-to see patterns, relationships, and intensity in data.
+df=pd.read_csv("MARKSHEET.csv")
 # # print(df.head())
 # gs=df.groupby("Ethnicity").agg({"Percentage":"mean"})
 # # sns.heatmap(gs)
@@ -59,9 +59,9 @@ import seaborn as sns
 
 
 # 7- PAIRPLOT SEABORN :-
-# df=pd.read_csv("MARKSHEET.csv")
-# sns.pairplot(df,hue="Gender")
-# plt.show()
+df=pd.read_csv("MARKSHEET.csv")
+sns.pairplot(df,hue="Gender")
+plt.show()
 
 
 
